@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/home.css">
-    <title>Document</title>
+    <title>Adopt a Dog</title>
 </head>
 
 <body>
@@ -20,6 +20,12 @@
     <main>
         <section class="main-section">
             <h2>Adopt a Dog!</h2>
+            <div id="dog-search">
+                <input id="dog-name-input" value="Dog name">
+                <button id="dog-name-button">Search</button>
+                <button id="dog-clear-button">Clear Search</button>
+            </div>
+            <p class="hidden" id="error-message">No dogs found matching that name. Please try a different name.</p>
             <div id="dog-list-container">
 
             </div>
