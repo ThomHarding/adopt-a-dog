@@ -23,6 +23,16 @@ export async function getDog(id) {
     return checkError(response);    
 }
 
+export async function getDogByName(name) {
+    let response = await client
+        .from('dogs')
+        .select()
+        .match({ name: name })
+        .single();
+    // and return the response (checking for errors)
+    return checkError(response);  
+}
+
 function checkError({ data, error }) {
     return error ? console.error(error) : data;
 }
